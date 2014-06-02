@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
-import ez_setup
-ez_setup.use_setuptools()
+try:
+    import ez_setup
+    ez_setup.use_setuptools()
+except ImportError:
+    pass
 
 import sys, os
 from setuptools import setup, find_packages
